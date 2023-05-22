@@ -1,10 +1,10 @@
 import React from 'react'
+import style from '../css/sass.module.scss'
 
 export default function Main() {
     return (
         <div>
-            <h3>MAIN</h3>
-            <p>로그인에 성공하였습니다</p>
+            <p className={style.main}>로그인에 성공하였습니다</p>
         </div>
     )
 }

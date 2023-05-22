@@ -36,6 +36,7 @@ export default function LoginForm() {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 // ..
+                console.log(errorCode, errorMessage)
                 if(errorCode == "auth/user-not-found " || errorCode == "auth/wrong-password") {
                     alert('존재하지않는 이메일이거나 비밀번호가 잘못입력되었습니다')
                     navigate('/');
@@ -50,6 +51,7 @@ export default function LoginForm() {
             try{
                 const userCredential = await signInWithEmailAndPassword(auth, email, password)
                 const user = userCredential.user;
+                console.log(user);
                 setUser(
                     {
                         uid : user.uid,
@@ -82,7 +84,7 @@ export default function LoginForm() {
 
     return (
         <div>
-            <h3 className={style.header}>로그인 또는 회원가입 페이지입니다</h3>
+            <h3 className={style.main}>로그인 또는 회원가입 페이지입니다</h3>
 
             <form onSubmit={onEmailLogin}>
                 

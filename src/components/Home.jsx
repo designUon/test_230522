@@ -9,7 +9,7 @@ export default function Home() {
         <div>
             {/* <h3 className="bg-indigo-500">HOME</h3>
             <p className="underline">로그인에 실패하면 HOME로 돌아옵니다</p> */}
-            <h3 className={style.header}>HOME</h3>
+
             <p className={style.main}>로그인에 실패하면
             <br />
             HOME로 돌아옵니다!</p>
