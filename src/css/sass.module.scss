@@ -1,0 +1,32 @@
+.header {
+    margin: 20px 0;
+    color: #fa8072;
+    border-bottom: 1px solid #fa8072;
+}
+
+.main {
+    margin: 50px 0;
+}
+
+.button {
+    background-color: #fa8072;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin: 30px 10px;
+    cursor: pointer;
+    color: white;
+    
+    &:hover {
+        background-color: #f75f5f;
+    }
+}
+
+.input_box {
+    border: 1px solid #fa8072;
+    margin: 5px 5px;
+    accent-color: #f75f5f;
+}
+
+.input_label{
+    color: #f75f5f;
+}
